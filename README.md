@@ -6,7 +6,7 @@
 
 <a href="https://www.buymeacoffee.com/grzegorzm" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-NonParStat is a python module containing various non parametric statistical tests. The name NonParStat is a shortcut from Non-Parametric Statistics. The aim of the package is to extend the functionalities provided in the `scipy` package in the scope of statistical testing. 
+NonParStat is a Python module containing various non-parametric statistical tests. The name NonParStat is a shortcut from Non-Parametric Statistics. The package aims to extend the functionalities provided in the `scipy` package in the scope of statistical testing. 
 
 List of available tests:
 
@@ -16,7 +16,7 @@ List of available tests:
 To generate the documentation run `pdoc3 --html --force  -o'docs' nonparstat/`.
 
 Example Usage:
-'''python
+```Python
 import numpy as np
 from NonParStat.nonparstat import Cucconi
 np.random.seed(987654321) # set random seed to get the same result
@@ -32,4 +32,4 @@ print(test_result) #-> CucconiResult(statistic=2.62372293956099, pvalue=0.000999
 sample_a = sample_b = np.random.normal(loc=0, scale=1, size=100)
 test_result = podgor_gastwirth_test(sample_a, sample_b)
 print(test_result) #->Podgor_GastwirthResult(statistic=-1.9596768652263527e-13, pvalue=1.0)
-'''
+```
